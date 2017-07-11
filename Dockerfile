@@ -110,7 +110,8 @@ RUN     wget https://storage.googleapis.com/kubernetes-release/release/${K8S_VER
         mv kubectl /opt/cnct/kubernetes/v1.5/bin
 RUN     wget https://storage.googleapis.com/kubernetes-release/release/${K8S_VERSION_1_6}/bin/linux/amd64/kubectl && \
         chmod a+x kubectl && \
-        mv kubectl /opt/cnct/kubernetes/v1.6/bin
+        mv kubectl /opt/cnct/kubernetes/v1.6/bin && \
+                ln -s /opt/cnct/kubernetes/v1.6/bin/kubectl /usr/bin/
 
 # Helm
 RUN     wget http://storage.googleapis.com/kubernetes-helm/helm-${K8S_HELM_VERSION_1_4}-linux-amd64.tar.gz  && \
