@@ -22,7 +22,7 @@ pycparser==2.18
 pycrypto==2.6.1
 python-dateutil==2.6.0
 PyYAML==3.11
-rsa==3.4.2
+rsa==4.7
 semver==2.7.7
 s3transfer==0.1.10
 six==1.10.0
